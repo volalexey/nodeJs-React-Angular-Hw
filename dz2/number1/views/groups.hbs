@@ -1,0 +1,25 @@
+<h1>Groups</h1>
+
+
+{{#if groups.length}}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Group Title</th>
+            <th scope="col">Students amount</th>
+            <th scope="col">Curator</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each groups}}
+            <tr>
+                <td>{{title}}</td>
+                <td>{{amountOfStudents}}</td>
+                <td>{{curator}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+{{else}}
+    <p>No groups yet</p>
+{{/if}}

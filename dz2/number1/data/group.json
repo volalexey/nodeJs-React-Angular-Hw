@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Group-1",
+    "amountOfStudents": 25,
+    "curator": "Alice"
+  },
+  {
+    "title": "Group-2",
+    "amountOfStudents": 18,
+    "curator": "Bob"
+  },
+  {
+    "title": "Group-3",
+    "amountOfStudents": 22,
+    "curator": "Charlie"
+  },
+  {
+    "title": "Group-4",
+    "amountOfStudents": 19,
+    "curator": "David"
+  },
+  {
+    "title": "Group-5",
+    "amountOfStudents": 20,
+    "curator": "Eva"
+  },
+  {
+    "title": "Group-6",
+    "amountOfStudents": 28,
+    "curator": "Frank"
+  },
+  {
+    "title": "Group-7",
+    "amountOfStudents": 15,
+    "curator": "Grace"
+  },
+  {
+    "title": "Group-8",
+    "amountOfStudents": 23,
+    "curator": "Helen"
+  },
+  {
+    "title": "Group-9",
+    "amountOfStudents": 26,
+    "curator": "Ivy"
+  },
+  {
+    "title": "Group-10",
+    "amountOfStudents": 17,
+    "curator": "Jack"
+  },
+  {
+    "title": "Group-11",
+    "amountOfStudents": 21,
+    "curator": "Alice"
+  },
+  {
+    "title": "Group-12",
+    "amountOfStudents": 24,
+    "curator": "Bob"
+  },
+  {
+    "title": "Group-13",
+    "amountOfStudents": 27,
+    "curator": "Charlie"
+  },
+  {
+    "title": "Group-14",
+    "amountOfStudents": 16,
+    "curator": "David"
+  },
+  {
+    "title": "Group-15",
+    "amountOfStudents": 29,
+    "curator": "Eva"
+  },
+  {
+    "title": "Group-16",
+    "amountOfStudents": 14,
+    "curator": "Frank"
+  },
+  {
+    "title": "Group-17",
+    "amountOfStudents": 30,
+    "curator": "Grace"
+  },
+  {
+    "title": "Group-18",
+    "amountOfStudents": 13,
+    "curator": "Helen"
+  },
+  {
+    "title": "Group-19",
+    "amountOfStudents": 22,
+    "curator": "Ivy"
+  },
+  {
+    "title": "Group-20",
+    "amountOfStudents": 18,
+    "curator": "Jack"
+  }
+]
