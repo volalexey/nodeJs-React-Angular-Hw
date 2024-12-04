@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <div class="mb-3">
+    <label for="xInput" class="form-label">X</label>
+    <input
+      id="xInput"
+      type="number"
+      class="form-control"
+      value="{{ numberX }}"
+      (keyup)="inputX($event)"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="yInput" class="form-label">Y</label>
+    <input
+      id="yInput"
+      type="number"
+      class="form-control"
+      value="{{ numberY }}"
+      (keyup)="inputY($event)"
+    />
+  </div>
+
+  <div class="mb-3 d-flex gap-2">
+    <button class="btn btn-secondary" (click)="solveHandler('plus')">
+      +
+    </button>
+    <button class="btn btn-secondary" (click)="solveHandler('minus')">
+      -
+    </button>
+    <button class="btn btn-secondary" (click)="solveHandler('mult')">
+      *
+    </button>
+    <button class="btn btn-secondary" (click)="solveHandler('div')">
+      /
+    </button>
+    <button class="btn btn-secondary" (click)="solveHandler('mod')">
+      mod
+    </button>
+  </div>
+  <div class="p-3 bg-light border rounded">
+    <span>{{numberX}}</span>
+     {{sign}} 
+     <span>{{numberY}}</span>
+     = {{result != null ? result : ""}}
+  </div>
+  <div>{{error ? error : ''}}</div>
+</div>
