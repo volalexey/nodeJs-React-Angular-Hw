@@ -1,0 +1,58 @@
+<h1 class="text-center mb-4">Add Products</h1>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="mb-3">
+        <label for="type" class="form-label">Type:</label>
+        <input id="type" formControlName="TypeProduct" type="text" class="form-control" />
+        <div class="validation-error" *ngIf="this.form.controls['TypeProduct'].invalid && this.form.controls['TypeProduct'].touched">
+            <small class="text-danger">Type is required.</small>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="vendor" class="form-label">Vendor:</label>
+        <input id="vendor" formControlName="Vendor" type="text" class="form-control" />
+        <div class="validation-error" *ngIf="this.form.controls['Vendor'].invalid && this.form.controls['Vendor'].touched">
+            <small class="text-danger">Vendor is required.</small>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="model" class="form-label">Model:</label>
+        <input id="model" formControlName="Model" type="text" class="form-control" />
+        <div class="validation-error" *ngIf="this.form.controls['Model'].invalid && this.form.controls['Model'].touched">
+            <small class="text-danger">Model is required.</small>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="price" class="form-label">Price:</label>
+        <input id="price" formControlName="Price" type="number" class="form-control" />
+        <div class="validation-error" *ngIf="this.form.controls['Price'].invalid && this.form.controls['Price'].touched">
+            <small class="text-danger">Price is required.</small>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="count" class="form-label">Count:</label>
+        <input id="count" formControlName="Count" type="number" class="form-control" />
+        <div class="validation-error" *ngIf="this.form.controls['Count'].invalid && this.form.controls['Count'].touched">
+            <small class="text-danger">Count is required.</small>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Vendor Email:</label>
+        <input id="email" formControlName="VendorEmail" type="email" class="form-control" />
+        <div class="validation-error" *ngIf="this.form.controls['VendorEmail'].invalid && this.form.controls['VendorEmail'].touched">
+            <small class="text-danger">Vendor Email is invalid.</small>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description:</label>
+        <textarea id="description" formControlName="Description" class="form-control"></textarea>
+    </div>
+
+    <button class="btn btn-primary" [disabled]="form.invalid">Send</button>
+</form>

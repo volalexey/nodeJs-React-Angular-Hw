@@ -1,0 +1,20 @@
+<h1>Product Info</h1>
+
+<div class="card" style="max-width: 540px; margin: auto;">
+    <div class="row g-0">
+        <div class="col-md-4 d-flex align-items-center">
+            <img [src]="product.Img" class="img-fluid rounded-start" alt="NoImage">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{product.Model}}</h5>
+                <p class="card-text"><strong>Vendor:</strong> {{product.Vendor}}</p>
+                <p class="card-text"><strong>ID:</strong> {{product.Id}}</p>
+                <p class="card-text"><strong>Price:</strong> {{product.Price}}</p>
+                <p class="card-text"><strong>Count:</strong> {{product.Count}}</p>
+                <p class="card-text"><strong>Description:</strong> {{product.Description}}</p>
+                <p class="card-text"><strong>Vendor Email:</strong> <a href="mailto:{{product.VendorEmail}}">{{product.VendorEmail}}</a></p>
+            </div>
+        </div>
+    </div>
+</div>

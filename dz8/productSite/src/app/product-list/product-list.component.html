@@ -1,0 +1,31 @@
+<h1 class="text-center mb-4">Products</h1>
+
+<app-product-form></app-product-form>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>TypeProduct</th>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Count</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productService.products">
+                <td>{{product.TypeProduct}}</td>
+                <td>{{product.Model}}</td>
+                <td>{{product.Price | currency}}</td>
+                <td>{{product.Count}}</td>
+                <td>
+                    <button class="btn btn-danger btn-sm" (click)="deleteHandler(product.Id)">Delete</button>
+                    <a class="btn btn-info btn-sm ml-2" 
+                       routerLinkActive="active"
+                       [routerLink]="['/products', product.Id]">View Product</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
